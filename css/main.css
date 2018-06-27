@@ -3436,4 +3436,7 @@ html.no-csstransitions .home-content__main {
 .text-center {
   text-align: center !important;
 }
+.no-margin-top {
+  margin-top: 0 !important;
+}
 /*# sourceMappingURL=main.css.map */
