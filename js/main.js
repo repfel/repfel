@@ -41,6 +41,27 @@
             $("html").removeClass('cl-preload');
             $("html").addClass('cl-loaded');
 
+            setTimeout(function() {
+              var $popupNotice = $("#popup-notice");
+              $popupNotice.show();
+              $popupNotice.css({
+                opacity: 1
+              });
+
+              $("#popup-notice-close").click(function(e) {
+                e.preventDefault();
+                $popupNotice.css({
+                  opacity: 0
+                });
+                setTimeout(function() {
+                  $popupNotice.hide();
+                }, 1500);
+              });
+              $(document).one('keyup', function (e) {
+                if (e.keyCode === 27) $popupNotice.hide();
+              });
+            }, 2000);
+
         });
     };
 
