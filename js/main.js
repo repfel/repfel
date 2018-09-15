@@ -367,7 +367,6 @@
         });
     };
 
-
    /* Initialize
     * ------------------------------------------------------ */
     (function clInit() {
@@ -389,3 +388,9 @@
     })();
 
 })(jQuery);
+
+// Expand text
+function expandText(id) {
+  $('#' + id + '-text').removeClass('text-collapsed');
+  $('#' + id + '-btn').hide();
+}

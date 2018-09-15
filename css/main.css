@@ -3472,3 +3472,13 @@ html.no-csstransitions .home-content__main {
     padding: 25px;
   }
 }
+
+.testimonials__avatar {
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+}
+.text-collapsed {
+  height: 150px;
+  overflow: hidden;
+}
