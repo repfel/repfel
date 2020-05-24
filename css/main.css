@@ -193,6 +193,7 @@ p.lead {
 }
 li.lead {
   font-size: 2.4rem;
+  list-style: none;
 }
 @media only screen and (max-width: 1200px) {
   p.lead {
